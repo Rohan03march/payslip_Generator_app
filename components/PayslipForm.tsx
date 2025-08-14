@@ -301,7 +301,7 @@ export default function PayslipForm() {
               <TextInput label="LOP Days" value={lopDays} onChangeText={setLopDays} style={styles.flexInput} keyboardType="numeric" mode="outlined" />
               <TextInput label="Leaves Taken" value={leavesTaken} onChangeText={setLeavesTaken} style={styles.w150} keyboardType="numeric" mode="outlined" />
             </View>
-            <HelperText>Paid Leaves: {totals.paidDays}</HelperText>
+            <HelperText type="info">Paid Leaves: {totals.paidDays}</HelperText>
           </Card.Content>
         </Card>
 
@@ -326,7 +326,7 @@ export default function PayslipForm() {
 
             <TextInput label="Other Allowance" value={otherAllowance} onChangeText={setOtherAllowance} mode="outlined" keyboardType="numeric" style={styles.mt8} />
             <Divider style={styles.mv8} />
-            <HelperText>Total Earnings: ₹ {fmt(totals.earnings)}</HelperText>
+            <HelperText  type="info">Total Earnings: ₹ {fmt(totals.earnings)}</HelperText>
           </Card.Content>
         </Card>
 
@@ -350,14 +350,14 @@ export default function PayslipForm() {
             </View>
 
             <Divider style={styles.mv8} />
-            <HelperText>Total Deductions: ₹ {fmt(totals.deductions)}</HelperText>
+            <HelperText  type="info">Total Deductions: ₹ {fmt(totals.deductions)}</HelperText>
           </Card.Content>
         </Card>
 
         {/* Net Salary */}
         <Card style={[styles.card, styles.netCard]}>
-          <HelperText style={styles.netTitle}>Net Salary</HelperText>
-          <HelperText style={styles.netAmount}>₹ {fmt(totals.net)}</HelperText>
+          <HelperText  type="info" style={styles.netTitle}>Net Salary</HelperText>
+          <HelperText  type="info" style={styles.netAmount}>₹ {fmt(totals.net)}</HelperText>
         </Card>
 
         {/* Buttons */}
