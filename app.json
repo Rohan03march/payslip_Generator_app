@@ -36,8 +36,15 @@
     ],
     "extra": {
       "eas": {
-        "projectId": "d21c3bba-9a54-4a94-ac80-c7f0d75b1d36"
+        "projectId": "491fa308-bc23-4da1-aa03-f5cee224fd99"
       }
+    },
+    "owner": "rohan_03",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/491fa308-bc23-4da1-aa03-f5cee224fd99"
     }
   }
 }
